@@ -2,7 +2,7 @@
 anyio==3.7.1
 click==8.1.7
 colorama==0.4.6
-fastapi==0.104.1
+fastapi
 h11==0.14.0
 idna==3.4
 numpy==1.26.1
