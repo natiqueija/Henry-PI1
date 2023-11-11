@@ -2,7 +2,7 @@
 
 
 
-<H1 align="center">MVP-PI-1-Henry</H1>
+<H1 align="center">Proyecto de recomendaciones de videojuegos para la plataforma Steam</H1>
 
 MVP para una api de recomendaciones de videojuegos como primer proyecto individual de [Soy Henry](https://www.soyhenry.com/?utm_source=google&utm_medium=cpc&utm_campaign=GADS_SEARCH_ARG_BRAND&utm_content=brand&gad=1&gclid=Cj0KCQjw1OmoBhDXARIsAAAYGSFC2WWyy_RYznNkc6QevI2HP7hhqdfUyI1W1CofKjIFQpAZhyfTYccaAt-fEALw_wcB)
 
@@ -41,19 +41,34 @@ Se realizaron las transformaciones de cada dataset por separado para un mejor en
 - Se realizan ciertos gráficos para visualizar la distribución de los datos:
 
 1) Gráfico de barras del top 10 de desarrolladores con mas juegos y la cantidad de cada uno.
-<img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/44fa169b-99d4-469a-bf49-06d69e25bf6a" width="350" height="250">
+<div align="center">
+    <img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/44fa169b-99d4-469a-bf49-06d69e25bf6a" alt="Top 10 de desarrolladores con más juegos" width="70%">
+</div>
+<br>
 
 2) Gráfico Boxplot de la columna "price" para buscar los valores outliers
-<img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/dbc6689f-d937-4c35-8acc-af9aeea572d1" width="350" height="250">
+<div align="center">
+    <img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/dbc6689f-d937-4c35-8acc-af9aeea572d1" alt="Outliers en el precio de los juegos" width="70%">
+</div>
+<br>
 
 3) Así como también un gráfico de dispersión de la columna "price" para analizarlo mejor
-<img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/1a4ea80b-ff79-4665-817e-c7c5633b6d9f" width="350" height="250">
+<div align="center">
+    <img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/1a4ea80b-ff79-4665-817e-c7c5633b6d9f" alt="Dispersión en el precio de los juegos" width="70%">
+</div>
+<br>
 
 4) Gráfico de torta para visualizar la diferencia entre la cantidad de juegos pagos vs la cantidad de juegos gratuitos que tiene la plataforma.
-<img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/6e40a324-98e9-43b0-b0ac-e8f633175674" width="250" height="250">
+<div align="center">
+    <img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/6e40a324-98e9-43b0-b0ac-e8f633175674" alt="Juegos pagos vs juegos gratuitos" width="50%">
+</div>
+<br>
 
 5) Por útlimo, un gráfico de barras para ver la cantidad de juegos lanzados por año por la plataforma.
-<img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/daf8ba9d-d555-4daf-ac0d-ac6a1a6dd964" width="350" height="250">
+<div align="center">
+    <img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/daf8ba9d-d555-4daf-ac0d-ac6a1a6dd964" alt="Cantidad de juegos lanzados por año" width="80%">
+</div>
+<br>
 
 ### Dataset "user_reviews"
 - Como primera observación vemos que las reseñas están en un formato tipo json, por lo que, utilizamos primero un .explode() para lograr tener una reseña por fila y desanidamos el diccionario creando nuevas columnas para ver los valores.
@@ -63,13 +78,22 @@ Se realizaron las transformaciones de cada dataset por separado para un mejor en
 - Se realizan ciertos gráficos para visualizar la distribución de los datos:
 
 1) Gráfico de torta para visualizar la cantidad de recomendaciones que hubieron en la plataforma.
-<img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/ccd1f5e9-dfb4-4127-8baa-5c03fea8799b" width="250" height="250">
+<div align="center">
+    <img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/ccd1f5e9-dfb4-4127-8baa-5c03fea8799b" alt="Cantidad de recomendaciones en la plataforma" width="50%">
+</div>
+<br>
 
 2) Gráfico de barras horizontales para visualizar el top 10 de juegos con mayor cantidad de recomendaciones.
-<img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/0e3f3cae-7530-4e0d-852d-7efdd793a300" width="350" height="250">
+<div align="center">
+    <img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/0e3f3cae-7530-4e0d-852d-7efdd793a300" alt="Top 10 juegos con mayor cantidad de recomendaciones" width="80%">
+</div>
+<br>
 
 3) Gráfico de barras para analizar la cantidad de reviews por categoria del analisis de sentimiento.
-<img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/7b7124aa-a46b-4512-a55d-51660eb41c3b" width="350" height="250">
+<div align="center">
+    <img src="https://github.com/natiqueija/Henry-PI1/assets/109183272/7b7124aa-a46b-4512-a55d-51660eb41c3b" alt="Cantidad de reviews por categoría" width="60%">
+</div>
+<br>
 
 ### Dataset "user_items"
 - Como primera observación vemos que hay 1357 registros duplicados por lo que decidimos eliminarlos.
@@ -130,3 +154,8 @@ A continuación se encuentra el link a Render: [Henry-PI1]([https://mvp-pi-1-soy
 ## Video explicativo
 
 - Se realizó un video explicativo de todo el proyecto, el cual se encuentra alojado en el siguiente [Drive](https://drive.google.com/drive/folders/18ubpDrUfChnage6gRNDTu68SxJlr4_xZ?usp=sharing)
+
+## Contacto
+
+- Mail: natiqueija@gmail.com
+- Linkedin: [Natalia Queija](https://www.linkedin.com/in/natalia-queija/)
